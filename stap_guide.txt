@@ -1,321 +1,334 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
-<!-- git web interface version 1.7.1, (C) 2005-2006, Kay Sievers <kay.sievers@vrfy.org>, Christian Gierke -->
-<!-- git core binaries version 1.7.1 -->
-<head>
-<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-<meta name="generator" content="gitweb/1.7.1 git/1.7.1"/>
-<meta name="robots" content="index, nofollow"/>
-<title>sourceware.org Git - systemtap.git/summary</title>
-<link rel="stylesheet" type="text/css" href="gitweb.css"/>
-<link rel="alternate" title="systemtap.git - log - RSS feed" href="/git/gitweb.cgi?p=systemtap.git;a=rss" type="application/rss+xml" />
-<link rel="alternate" title="systemtap.git - log - RSS feed (no merges)" href="/git/gitweb.cgi?p=systemtap.git;a=rss;opt=--no-merges" type="application/rss+xml" />
-<link rel="alternate" title="systemtap.git - log - Atom feed" href="/git/gitweb.cgi?p=systemtap.git;a=atom;opt=--no-merges" type="application/atom+xml" />
-<link rel="alternate" title="systemtap.git - log - Atom feed (no merges)" href="/git/gitweb.cgi?p=systemtap.git;a=atom;opt=--no-merges" type="application/atom+xml" />
-<link rel="shortcut icon" href="git-favicon.png" type="image/png" />
-</head>
-<body>
-<div class="page_header">
-<a title="git homepage" href="http://git-scm.com/"><img src="git-logo.png" width="72" height="27" alt="git" class="logo"/></a><a href="/git/gitweb.cgi">git://sourceware.org</a> / <a href="/git/gitweb.cgi?p=systemtap.git;a=summary">systemtap.git</a> / summary
-</div>
-<form method="get" action="/git/gitweb.cgi" enctype="application/x-www-form-urlencoded">
-<div class="search">
-<input name="p" type="hidden" value="systemtap.git" />
-<input name="a" type="hidden" value="search" />
-<input name="h" type="hidden" value="HEAD" />
-<select name="st" >
-<option selected="selected" value="commit">commit</option>
-<option value="grep">grep</option>
-<option value="author">author</option>
-<option value="committer">committer</option>
-<option value="pickaxe">pickaxe</option>
-</select><sup><a href="/git/gitweb.cgi?p=systemtap.git;a=search_help">?</a></sup> search:
-<input type="text" name="s"  />
-<span title="Extended regular expression"><label><input type="checkbox" name="sr" value="1" />re</label></span></div>
-</form>
-<div class="page_nav">
-summary | <a href="/git/gitweb.cgi?p=systemtap.git;a=shortlog">shortlog</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=log">log</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=09c16468eb17267fb6e31e7fea89c56d2662ea23">commit</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=commitdiff;h=09c16468eb17267fb6e31e7fea89c56d2662ea23">commitdiff</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=tree">tree</a><br/>
-<br/>
-</div>
-<div class="title">&nbsp;</div>
-<table class="projects_list">
-<tr id="metadata_desc"><td>description</td><td>systemtap: system-wide probe/trace tool</td></tr>
-<tr id="metadata_owner"><td>owner</td><td>fche@redhat.com</td></tr>
-<tr id="metadata_lchange"><td>last change</td><td>Fri, 28 Feb 2014 20:27:56 +0000</td></tr>
-<tr class="metadata_url"><td>URL</td><td>git://sourceware.org/git/systemtap.git</td></tr>
-<tr class="metadata_url"><td></td><td>ssh://sourceware.org/git/systemtap.git</td></tr>
-<tr class="metadata_url"><td></td><td>http://sourceware.org/git/systemtap.git</td></tr>
-</table>
-<div class="header">
-<a class="title" href="/git/gitweb.cgi?p=systemtap.git;a=shortlog">shortlog</a>
-</div>
-<table class="shortlog">
-<tr class="dark">
-<td title="2014-02-28"><i>2 days ago</i></td>
-<td class="author"><a title="Search for commits authored by David Smith" class="list" href="/git/gitweb.cgi?p=systemtap.git;a=search;s=David+Smith;st=author">David Smith</a></td><td><a class="list subject" title="Small syscall/nd_syscall tapset and testsuite fixes and improvements." href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=09c16468eb17267fb6e31e7fea89c56d2662ea23">Small syscall/nd_syscall tapset and testsuite fixes... </a> <span class="refs"> <span class="head" title="heads/master"><a href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/heads/master">master</a></span></span></td>
-<td class="link"><a href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=09c16468eb17267fb6e31e7fea89c56d2662ea23">commit</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=commitdiff;h=09c16468eb17267fb6e31e7fea89c56d2662ea23">commitdiff</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=tree;h=09c16468eb17267fb6e31e7fea89c56d2662ea23;hb=09c16468eb17267fb6e31e7fea89c56d2662ea23">tree</a></td>
-</tr>
-<tr class="light">
-<td title="2014-02-28"><i>2 days ago</i></td>
-<td class="author"><a title="Search for commits authored by Jonathan Lebon" class="list" href="/git/gitweb.cgi?p=systemtap.git;a=search;s=Jonathan+Lebon;st=author">Jonathan Lebon</a></td><td><a class="list subject" title="PR6941: also skip prologue search for function(NUM) probes" href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=b5b9879fc10e96e37d89b84922bf11f6ed4ccb34">PR6941: also skip prologue search for function(NUM... </a></td>
-<td class="link"><a href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=b5b9879fc10e96e37d89b84922bf11f6ed4ccb34">commit</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=commitdiff;h=b5b9879fc10e96e37d89b84922bf11f6ed4ccb34">commitdiff</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=tree;h=b5b9879fc10e96e37d89b84922bf11f6ed4ccb34;hb=b5b9879fc10e96e37d89b84922bf11f6ed4ccb34">tree</a></td>
-</tr>
-<tr class="dark">
-<td title="2014-02-28"><i>2 days ago</i></td>
-<td class="author"><a title="Search for commits authored by Jonathan Lebon" class="list" href="/git/gitweb.cgi?p=systemtap.git;a=search;s=Jonathan+Lebon;st=author">Jonathan Lebon</a></td><td><a class="list subject" href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=277a2b96fdafd1cb5eb489198c7a58c43ad16a4b">PR6941: skip prologue-skipping for GCC optimized code</a></td>
-<td class="link"><a href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=277a2b96fdafd1cb5eb489198c7a58c43ad16a4b">commit</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=commitdiff;h=277a2b96fdafd1cb5eb489198c7a58c43ad16a4b">commitdiff</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=tree;h=277a2b96fdafd1cb5eb489198c7a58c43ad16a4b;hb=277a2b96fdafd1cb5eb489198c7a58c43ad16a4b">tree</a></td>
-</tr>
-<tr class="light">
-<td title="2014-02-28"><i>2 days ago</i></td>
-<td class="author"><a title="Search for commits authored by Jonathan Lebon" class="list" href="/git/gitweb.cgi?p=systemtap.git;a=search;s=Jonathan+Lebon;st=author">Jonathan Lebon</a></td><td><a class="list subject" href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=7d31f657d74b22b5e04a3df8ad39c37530f81a44">dwflpp: new is_gcc_producer() function</a></td>
-<td class="link"><a href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=7d31f657d74b22b5e04a3df8ad39c37530f81a44">commit</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=commitdiff;h=7d31f657d74b22b5e04a3df8ad39c37530f81a44">commitdiff</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=tree;h=7d31f657d74b22b5e04a3df8ad39c37530f81a44;hb=7d31f657d74b22b5e04a3df8ad39c37530f81a44">tree</a></td>
-</tr>
-<tr class="dark">
-<td title="2014-02-28"><i>2 days ago</i></td>
-<td class="author"><a title="Search for commits authored by Jonathan Lebon" class="list" href="/git/gitweb.cgi?p=systemtap.git;a=search;s=Jonathan+Lebon;st=author">Jonathan Lebon</a></td><td><a class="list subject" href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=9c269440560ac3ea4c9e394c5995f8c9034a9da0">util.cxx: make tokenize() args optional in declaration</a></td>
-<td class="link"><a href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=9c269440560ac3ea4c9e394c5995f8c9034a9da0">commit</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=commitdiff;h=9c269440560ac3ea4c9e394c5995f8c9034a9da0">commitdiff</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=tree;h=9c269440560ac3ea4c9e394c5995f8c9034a9da0;hb=9c269440560ac3ea4c9e394c5995f8c9034a9da0">tree</a></td>
-</tr>
-<tr class="light">
-<td title="2014-02-27"><i>3 days ago</i></td>
-<td class="author"><a title="Search for commits authored by David Smith" class="list" href="/git/gitweb.cgi?p=systemtap.git;a=search;s=David+Smith;st=author">David Smith</a></td><td><a class="list subject" href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=9a9a6ff8cac204b09be4f81ceb2492f33216d4c0">The systemtap-server rpm now requires 'openssl'.</a></td>
-<td class="link"><a href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=9a9a6ff8cac204b09be4f81ceb2492f33216d4c0">commit</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=commitdiff;h=9a9a6ff8cac204b09be4f81ceb2492f33216d4c0">commitdiff</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=tree;h=9a9a6ff8cac204b09be4f81ceb2492f33216d4c0;hb=9a9a6ff8cac204b09be4f81ceb2492f33216d4c0">tree</a></td>
-</tr>
-<tr class="dark">
-<td title="2014-02-27"><i>3 days ago</i></td>
-<td class="author"><a title="Search for commits authored by Jonathan Lebon" class="list" href="/git/gitweb.cgi?p=systemtap.git;a=search;s=Jonathan+Lebon;st=author">Jonathan Lebon</a></td><td><a class="list subject" href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=7db8343aa7b1e6c5d5fd7c25cd95f6b72e5b2931">dwflpp/prologue: fix DW_AT_producer parsing</a></td>
-<td class="link"><a href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=7db8343aa7b1e6c5d5fd7c25cd95f6b72e5b2931">commit</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=commitdiff;h=7db8343aa7b1e6c5d5fd7c25cd95f6b72e5b2931">commitdiff</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=tree;h=7db8343aa7b1e6c5d5fd7c25cd95f6b72e5b2931;hb=7db8343aa7b1e6c5d5fd7c25cd95f6b72e5b2931">tree</a></td>
-</tr>
-<tr class="light">
-<td title="2014-02-27"><i>3 days ago</i></td>
-<td class="author"><a title="Search for commits authored by Jonathan Lebon" class="list" href="/git/gitweb.cgi?p=systemtap.git;a=search;s=Jonathan+Lebon;st=author">Jonathan Lebon</a></td><td><a class="list subject" href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=158f2f12da925fe2cf8291b83e7b362f27e8f646">dwflpp/prologue: clean up and simplify logic</a></td>
-<td class="link"><a href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=158f2f12da925fe2cf8291b83e7b362f27e8f646">commit</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=commitdiff;h=158f2f12da925fe2cf8291b83e7b362f27e8f646">commitdiff</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=tree;h=158f2f12da925fe2cf8291b83e7b362f27e8f646;hb=158f2f12da925fe2cf8291b83e7b362f27e8f646">tree</a></td>
-</tr>
-<tr class="dark">
-<td title="2014-02-27"><i>3 days ago</i></td>
-<td class="author"><a title="Search for commits authored by Jonathan Lebon" class="list" href="/git/gitweb.cgi?p=systemtap.git;a=search;s=Jonathan+Lebon;st=author">Jonathan Lebon</a></td><td><a class="list subject" title="dwflpp/prologue: use function's decl_line for older GCCs" href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=ac3d373592c56774e1e8731730063befb291f8f8">dwflpp/prologue: use function's decl_line for older... </a></td>
-<td class="link"><a href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=ac3d373592c56774e1e8731730063befb291f8f8">commit</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=commitdiff;h=ac3d373592c56774e1e8731730063befb291f8f8">commitdiff</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=tree;h=ac3d373592c56774e1e8731730063befb291f8f8;hb=ac3d373592c56774e1e8731730063befb291f8f8">tree</a></td>
-</tr>
-<tr class="light">
-<td title="2014-02-27"><i>3 days ago</i></td>
-<td class="author"><a title="Search for commits authored by Jonathan Lebon" class="list" href="/git/gitweb.cgi?p=systemtap.git;a=search;s=Jonathan+Lebon;st=author">Jonathan Lebon</a></td><td><a class="list subject" href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=a43d3fbfdd210884540b048d0a033792a3811468">dwflpp/prologue: don't skip the first line record</a></td>
-<td class="link"><a href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=a43d3fbfdd210884540b048d0a033792a3811468">commit</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=commitdiff;h=a43d3fbfdd210884540b048d0a033792a3811468">commitdiff</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=tree;h=a43d3fbfdd210884540b048d0a033792a3811468;hb=a43d3fbfdd210884540b048d0a033792a3811468">tree</a></td>
-</tr>
-<tr class="dark">
-<td title="2014-02-26"><i>4 days ago</i></td>
-<td class="author"><a title="Search for commits authored by Josh Stone" class="list" href="/git/gitweb.cgi?p=systemtap.git;a=search;s=Josh+Stone;st=author">Josh Stone</a></td><td><a class="list subject" href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=5d81ce3b40365ddecc9af7c8d4681d70f58bef35">PR16472: Add an indent_depth() tapset function</a></td>
-<td class="link"><a href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=5d81ce3b40365ddecc9af7c8d4681d70f58bef35">commit</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=commitdiff;h=5d81ce3b40365ddecc9af7c8d4681d70f58bef35">commitdiff</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=tree;h=5d81ce3b40365ddecc9af7c8d4681d70f58bef35;hb=5d81ce3b40365ddecc9af7c8d4681d70f58bef35">tree</a></td>
-</tr>
-<tr class="light">
-<td title="2014-02-26"><i>4 days ago</i></td>
-<td class="author"><a title="Search for commits authored by Fahad Arshad" class="list" href="/git/gitweb.cgi?p=systemtap.git;a=search;s=Fahad+Arshad;st=author">Fahad Arshad</a></td><td><a class="list subject" href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=cecdb2dddae55b510814dc8a6d7510e5fa5e0d9f">PR16472: Add a thread_indent_depth() tapset function</a></td>
-<td class="link"><a href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=cecdb2dddae55b510814dc8a6d7510e5fa5e0d9f">commit</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=commitdiff;h=cecdb2dddae55b510814dc8a6d7510e5fa5e0d9f">commitdiff</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=tree;h=cecdb2dddae55b510814dc8a6d7510e5fa5e0d9f;hb=cecdb2dddae55b510814dc8a6d7510e5fa5e0d9f">tree</a></td>
-</tr>
-<tr class="dark">
-<td title="2014-02-26"><i>4 days ago</i></td>
-<td class="author"><a title="Search for commits authored by Frank Ch. Eigler" class="list" href="/git/gitweb.cgi?p=systemtap.git;a=search;s=Frank+Ch.+Eigler;st=author">Frank Ch. Eigler</a></td><td><a class="list subject" href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=ad13deea98c0f4bfc2563634fd87287a3ab83244">NEWS: Mention guru_mode conditional</a></td>
-<td class="link"><a href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=ad13deea98c0f4bfc2563634fd87287a3ab83244">commit</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=commitdiff;h=ad13deea98c0f4bfc2563634fd87287a3ab83244">commitdiff</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=tree;h=ad13deea98c0f4bfc2563634fd87287a3ab83244;hb=ad13deea98c0f4bfc2563634fd87287a3ab83244">tree</a></td>
-</tr>
-<tr class="light">
-<td title="2014-02-26"><i>4 days ago</i></td>
-<td class="author"><a title="Search for commits authored by Peter Kjellström" class="list" href="/git/gitweb.cgi?p=systemtap.git;a=search;s=Peter+Kjellstr%C3%B6m;st=author">Peter Kjellström</a></td><td><a class="list subject" href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=92585d32aad4d48340071e8557de245d553adf4f">Add 'guru_mode' preprocessor conditional.</a></td>
-<td class="link"><a href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=92585d32aad4d48340071e8557de245d553adf4f">commit</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=commitdiff;h=92585d32aad4d48340071e8557de245d553adf4f">commitdiff</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=tree;h=92585d32aad4d48340071e8557de245d553adf4f;hb=92585d32aad4d48340071e8557de245d553adf4f">tree</a></td>
-</tr>
-<tr class="dark">
-<td title="2014-02-26"><i>4 days ago</i></td>
-<td class="author"><a title="Search for commits authored by Josh Stone" class="list" href="/git/gitweb.cgi?p=systemtap.git;a=search;s=Josh+Stone;st=author">Josh Stone</a></td><td><a class="list subject" title="stapdyn: Make sure mutatee::call_function is stopped first" href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=0de1458efd97c10005babf44ccad1477bc725996">stapdyn: Make sure mutatee::call_function is stopped... </a></td>
-<td class="link"><a href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=0de1458efd97c10005babf44ccad1477bc725996">commit</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=commitdiff;h=0de1458efd97c10005babf44ccad1477bc725996">commitdiff</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=tree;h=0de1458efd97c10005babf44ccad1477bc725996;hb=0de1458efd97c10005babf44ccad1477bc725996">tree</a></td>
-</tr>
-<tr class="light">
-<td title="2014-02-26"><i>4 days ago</i></td>
-<td class="author"><a title="Search for commits authored by David Smith" class="list" href="/git/gitweb.cgi?p=systemtap.git;a=search;s=David+Smith;st=author">David Smith</a></td><td><a class="list subject" href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=c5c3f3aca9fd995fbf9990c8e061b8aef2bb6cf7">Fix PR16636 by separating out preadv()/pwritev() testing.</a></td>
-<td class="link"><a href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=c5c3f3aca9fd995fbf9990c8e061b8aef2bb6cf7">commit</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=commitdiff;h=c5c3f3aca9fd995fbf9990c8e061b8aef2bb6cf7">commitdiff</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=tree;h=c5c3f3aca9fd995fbf9990c8e061b8aef2bb6cf7;hb=c5c3f3aca9fd995fbf9990c8e061b8aef2bb6cf7">tree</a></td>
-</tr>
-<tr>
-<td colspan="4"><a href="/git/gitweb.cgi?p=systemtap.git;a=shortlog">...</a></td>
-</tr>
-</table>
-<div class="header">
-<a class="title" href="/git/gitweb.cgi?p=systemtap.git;a=tags">tags</a>
-</div>
-<table class="tags">
-<tr class="dark">
-<td><i>3 months ago</i></td>
-<td><a class="list name" href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=aa7b1e00e6cb7058071ead0180de0541b1c6eccf">release-2.4</a></td>
-<td><a class="list subject" href="/git/gitweb.cgi?p=systemtap.git;a=tag;h=349bc31611021066b5ecebd4d15a3d23c836df28">release 2.4</a></td>
-<td class="selflink"><a href="/git/gitweb.cgi?p=systemtap.git;a=tag;h=349bc31611021066b5ecebd4d15a3d23c836df28">tag</a></td>
-<td class="link"> | <a href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=aa7b1e00e6cb7058071ead0180de0541b1c6eccf">commit</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/tags/release-2.4">shortlog</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=log;h=refs/tags/release-2.4">log</a></td>
-</tr><tr class="light">
-<td><i>7 months ago</i></td>
-<td><a class="list name" href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=e58138572ebddac9498b93c76770eeca7d45e3b1">release-2.3</a></td>
-<td><a class="list subject" href="/git/gitweb.cgi?p=systemtap.git;a=tag;h=0f5d747b5d37f981e6036c20a2f5f492fd680873">Release 2.3</a></td>
-<td class="selflink"><a href="/git/gitweb.cgi?p=systemtap.git;a=tag;h=0f5d747b5d37f981e6036c20a2f5f492fd680873">tag</a></td>
-<td class="link"> | <a href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=e58138572ebddac9498b93c76770eeca7d45e3b1">commit</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/tags/release-2.3">shortlog</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=log;h=refs/tags/release-2.3">log</a></td>
-</tr><tr class="dark">
-<td><i>9 months ago</i></td>
-<td><a class="list name" href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=9c4e07c8a34917e4cf598da763f7a0b020b0708d">release-2.2.1</a></td>
-<td><a class="list subject" href="/git/gitweb.cgi?p=systemtap.git;a=tag;h=b1c0ba9b2ecac8f254fc35f712ba90df62163d36">release 2.2.1</a></td>
-<td class="selflink"><a href="/git/gitweb.cgi?p=systemtap.git;a=tag;h=b1c0ba9b2ecac8f254fc35f712ba90df62163d36">tag</a></td>
-<td class="link"> | <a href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=9c4e07c8a34917e4cf598da763f7a0b020b0708d">commit</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/tags/release-2.2.1">shortlog</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=log;h=refs/tags/release-2.2.1">log</a></td>
-</tr><tr class="light">
-<td><i>9 months ago</i></td>
-<td><a class="list name" href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=d885563b32b309faff59eac221023e1eada50b31">release-2.2</a></td>
-<td><a class="list subject" href="/git/gitweb.cgi?p=systemtap.git;a=tag;h=d86a48fc645dfc6c0e844ab4c2807d67b4e81f72">release 2.2</a></td>
-<td class="selflink"><a href="/git/gitweb.cgi?p=systemtap.git;a=tag;h=d86a48fc645dfc6c0e844ab4c2807d67b4e81f72">tag</a></td>
-<td class="link"> | <a href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=d885563b32b309faff59eac221023e1eada50b31">commit</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/tags/release-2.2">shortlog</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=log;h=refs/tags/release-2.2">log</a></td>
-</tr><tr class="dark">
-<td><i>12 months ago</i></td>
-<td><a class="list name" href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=addec813fed4c712d6ea752f6e4f23e602b87fad">release-2.1</a></td>
-<td><a class="list subject" href="/git/gitweb.cgi?p=systemtap.git;a=tag;h=93e394a820f60cd05cd8c567558664d5a605f5b0">Systemtap 2.1</a></td>
-<td class="selflink"><a href="/git/gitweb.cgi?p=systemtap.git;a=tag;h=93e394a820f60cd05cd8c567558664d5a605f5b0">tag</a></td>
-<td class="link"> | <a href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=addec813fed4c712d6ea752f6e4f23e602b87fad">commit</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/tags/release-2.1">shortlog</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=log;h=refs/tags/release-2.1">log</a></td>
-</tr><tr class="light">
-<td><i>16 months ago</i></td>
-<td><a class="list name" href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=a63381cc8cf26f0e92461a764535a9ebfaaa4f3c">release-2.0</a></td>
-<td><a class="list subject" href="/git/gitweb.cgi?p=systemtap.git;a=tag;h=cf64824fa50b30980d8cae93aaf006bff7020289">release 2.0</a></td>
-<td class="selflink"><a href="/git/gitweb.cgi?p=systemtap.git;a=tag;h=cf64824fa50b30980d8cae93aaf006bff7020289">tag</a></td>
-<td class="link"> | <a href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=a63381cc8cf26f0e92461a764535a9ebfaaa4f3c">commit</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/tags/release-2.0">shortlog</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=log;h=refs/tags/release-2.0">log</a></td>
-</tr><tr class="dark">
-<td><i>20 months ago</i></td>
-<td><a class="list name" href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=48fa6b5e1d3e636c34cbd5650370e6f634efc294">release-1.8</a></td>
-<td><a class="list subject" href="/git/gitweb.cgi?p=systemtap.git;a=tag;h=149831035178f146f693bc99a8fc7c739dd2239e">release 1.8</a></td>
-<td class="selflink"><a href="/git/gitweb.cgi?p=systemtap.git;a=tag;h=149831035178f146f693bc99a8fc7c739dd2239e">tag</a></td>
-<td class="link"> | <a href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=48fa6b5e1d3e636c34cbd5650370e6f634efc294">commit</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/tags/release-1.8">shortlog</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=log;h=refs/tags/release-1.8">log</a></td>
-</tr><tr class="light">
-<td><i>2 years ago</i></td>
-<td><a class="list name" href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=83bd2699d8cff2f2d6b9eaf5ea254e4cb6b33e81">release-1.7</a></td>
-<td><a class="list subject" href="/git/gitweb.cgi?p=systemtap.git;a=tag;h=0a943d8a3c34b1005ed0bb3463c4548c1ea84048">release 1.7</a></td>
-<td class="selflink"><a href="/git/gitweb.cgi?p=systemtap.git;a=tag;h=0a943d8a3c34b1005ed0bb3463c4548c1ea84048">tag</a></td>
-<td class="link"> | <a href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=83bd2699d8cff2f2d6b9eaf5ea254e4cb6b33e81">commit</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/tags/release-1.7">shortlog</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=log;h=refs/tags/release-1.7">log</a></td>
-</tr><tr class="dark">
-<td><i>2 years ago</i></td>
-<td><a class="list name" href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=820f2d22fc47fad6e09ba886efb9b91e1247cb39">release-1.6</a></td>
-<td><a class="list subject" href="/git/gitweb.cgi?p=systemtap.git;a=tag;h=cae4048681ce9b5db96399bbdab952149f6245e9">Release 1.6</a></td>
-<td class="selflink"><a href="/git/gitweb.cgi?p=systemtap.git;a=tag;h=cae4048681ce9b5db96399bbdab952149f6245e9">tag</a></td>
-<td class="link"> | <a href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=820f2d22fc47fad6e09ba886efb9b91e1247cb39">commit</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/tags/release-1.6">shortlog</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=log;h=refs/tags/release-1.6">log</a></td>
-</tr><tr class="light">
-<td><i>2 years ago</i></td>
-<td><a class="list name" href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=a64d8b1337d202290d80dc152d790c812e298319">release-1.5</a></td>
-<td><a class="list subject" href="/git/gitweb.cgi?p=systemtap.git;a=tag;h=e6dba4664c468aed69f5c9aec1ed47208c1faaec">Release 1.5</a></td>
-<td class="selflink"><a href="/git/gitweb.cgi?p=systemtap.git;a=tag;h=e6dba4664c468aed69f5c9aec1ed47208c1faaec">tag</a></td>
-<td class="link"> | <a href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=a64d8b1337d202290d80dc152d790c812e298319">commit</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/tags/release-1.5">shortlog</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=log;h=refs/tags/release-1.5">log</a></td>
-</tr><tr class="dark">
-<td><i>3 years ago</i></td>
-<td><a class="list name" href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=c36cb86acfa2405b2bfe582a2411999391e98d76">release-1.4</a></td>
-<td><a class="list subject" href="/git/gitweb.cgi?p=systemtap.git;a=tag;h=a4bf68b41f926774b746f9598e86b0f710dce5ad">release 1.4</a></td>
-<td class="selflink"><a href="/git/gitweb.cgi?p=systemtap.git;a=tag;h=a4bf68b41f926774b746f9598e86b0f710dce5ad">tag</a></td>
-<td class="link"> | <a href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=c36cb86acfa2405b2bfe582a2411999391e98d76">commit</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/tags/release-1.4">shortlog</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=log;h=refs/tags/release-1.4">log</a></td>
-</tr><tr class="light">
-<td><i>3 years ago</i></td>
-<td><a class="list name" href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=e12e958f3b721441c9dbfa7eef283dbac501be1c">release-1.3</a></td>
-<td><a class="list subject" href="/git/gitweb.cgi?p=systemtap.git;a=tag;h=24b1e72ab633b635670271239e531c5baff4bde7">release 1.3</a></td>
-<td class="selflink"><a href="/git/gitweb.cgi?p=systemtap.git;a=tag;h=24b1e72ab633b635670271239e531c5baff4bde7">tag</a></td>
-<td class="link"> | <a href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=e12e958f3b721441c9dbfa7eef283dbac501be1c">commit</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/tags/release-1.3">shortlog</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=log;h=refs/tags/release-1.3">log</a></td>
-</tr><tr class="dark">
-<td><i>3 years ago</i></td>
-<td><a class="list name" href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=e36ba31aa58694a18e8012e946f7b1e4dea51fd7">release-1.2</a></td>
-<td><a class="list subject" href="/git/gitweb.cgi?p=systemtap.git;a=tag;h=d6a4e42926427be0224517128798600dbeb407d7">release 1.2</a></td>
-<td class="selflink"><a href="/git/gitweb.cgi?p=systemtap.git;a=tag;h=d6a4e42926427be0224517128798600dbeb407d7">tag</a></td>
-<td class="link"> | <a href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=e36ba31aa58694a18e8012e946f7b1e4dea51fd7">commit</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/tags/release-1.2">shortlog</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=log;h=refs/tags/release-1.2">log</a></td>
-</tr><tr class="light">
-<td><i>4 years ago</i></td>
-<td><a class="list name" href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=2a1c9b5db533fe7d2d2d4bac572195c490de62fb">release-1.1</a></td>
-<td><a class="list subject" href="/git/gitweb.cgi?p=systemtap.git;a=tag;h=258ff72ee17f195b4591cde51a24c80390b74e0b">release 1.1</a></td>
-<td class="selflink"><a href="/git/gitweb.cgi?p=systemtap.git;a=tag;h=258ff72ee17f195b4591cde51a24c80390b74e0b">tag</a></td>
-<td class="link"> | <a href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=2a1c9b5db533fe7d2d2d4bac572195c490de62fb">commit</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/tags/release-1.1">shortlog</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=log;h=refs/tags/release-1.1">log</a></td>
-</tr><tr class="dark">
-<td><i>4 years ago</i></td>
-<td><a class="list name" href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=7df91bcca3319ded571828011e8e22e9c19c9318">release-1.0.9</a></td>
-<td><a class="list subject" href="/git/gitweb.cgi?p=systemtap.git;a=tag;h=bd167234943f5ea0b67fbc531493e1eef7cb7065">1.0.9 prerelease</a></td>
-<td class="selflink"><a href="/git/gitweb.cgi?p=systemtap.git;a=tag;h=bd167234943f5ea0b67fbc531493e1eef7cb7065">tag</a></td>
-<td class="link"> | <a href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=7df91bcca3319ded571828011e8e22e9c19c9318">commit</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/tags/release-1.0.9">shortlog</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=log;h=refs/tags/release-1.0.9">log</a></td>
-</tr><tr class="light">
-<td><i>4 years ago</i></td>
-<td><a class="list name" href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=6a7aa1a180807e49cfeeccdb0eb460b41092a229">release-1.0</a></td>
-<td><a class="list subject" href="/git/gitweb.cgi?p=systemtap.git;a=tag;h=08782d9f786773c78312bdb0d72fa9f3d2c88160">release 1.0</a></td>
-<td class="selflink"><a href="/git/gitweb.cgi?p=systemtap.git;a=tag;h=08782d9f786773c78312bdb0d72fa9f3d2c88160">tag</a></td>
-<td class="link"> | <a href="/git/gitweb.cgi?p=systemtap.git;a=commit;h=6a7aa1a180807e49cfeeccdb0eb460b41092a229">commit</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/tags/release-1.0">shortlog</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=log;h=refs/tags/release-1.0">log</a></td>
-</tr><tr>
-<td colspan="5"><a href="/git/gitweb.cgi?p=systemtap.git;a=tags">...</a></td>
-</tr>
-</table>
-<div class="header">
-<a class="title" href="/git/gitweb.cgi?p=systemtap.git;a=heads">heads</a>
-</div>
-<table class="heads">
-<tr class="dark">
-<td><i>2 days ago</i></td>
-<td class="current_head"><a class="list name" href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/heads/master">master</a></td>
-<td class="link"><a href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/heads/master">shortlog</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=log;h=refs/heads/master">log</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=tree;h=refs/heads/master;hb=master">tree</a></td>
-</tr><tr class="light">
-<td><i>12 days ago</i></td>
-<td><a class="list name" href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/heads/jlebon/callee">jlebon/callee</a></td>
-<td class="link"><a href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/heads/jlebon/callee">shortlog</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=log;h=refs/heads/jlebon/callee">log</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=tree;h=refs/heads/jlebon/callee;hb=jlebon/callee">tree</a></td>
-</tr><tr class="dark">
-<td><i>2 weeks ago</i></td>
-<td><a class="list name" href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/heads/dsmith/secure-boot">dsmith/secure-boot</a></td>
-<td class="link"><a href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/heads/dsmith/secure-boot">shortlog</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=log;h=refs/heads/dsmith/secure-boot">log</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=tree;h=refs/heads/dsmith/secure-boot;hb=dsmith/secure-boot">tree</a></td>
-</tr><tr class="light">
-<td><i>3 months ago</i></td>
-<td><a class="list name" href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/heads/serhei/tpdd">serhei/tpdd</a></td>
-<td class="link"><a href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/heads/serhei/tpdd">shortlog</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=log;h=refs/heads/serhei/tpdd">log</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=tree;h=refs/heads/serhei/tpdd;hb=serhei/tpdd">tree</a></td>
-</tr><tr class="dark">
-<td><i>3 months ago</i></td>
-<td><a class="list name" href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/heads/wcohen/aarch64">wcohen/aarch64</a></td>
-<td class="link"><a href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/heads/wcohen/aarch64">shortlog</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=log;h=refs/heads/wcohen/aarch64">log</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=tree;h=refs/heads/wcohen/aarch64;hb=wcohen/aarch64">tree</a></td>
-</tr><tr class="light">
-<td><i>6 months ago</i></td>
-<td><a class="list name" href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/heads/serhei/regex">serhei/regex</a></td>
-<td class="link"><a href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/heads/serhei/regex">shortlog</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=log;h=refs/heads/serhei/regex">log</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=tree;h=refs/heads/serhei/regex;hb=serhei/regex">tree</a></td>
-</tr><tr class="dark">
-<td><i>10 months ago</i></td>
-<td><a class="list name" href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/heads/java">java</a></td>
-<td class="link"><a href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/heads/java">shortlog</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=log;h=refs/heads/java">log</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=tree;h=refs/heads/java;hb=java">tree</a></td>
-</tr><tr class="light">
-<td><i>13 months ago</i></td>
-<td><a class="list name" href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/heads/scox/perf">scox/perf</a></td>
-<td class="link"><a href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/heads/scox/perf">shortlog</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=log;h=refs/heads/scox/perf">log</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=tree;h=refs/heads/scox/perf;hb=scox/perf">tree</a></td>
-</tr><tr class="dark">
-<td><i>16 months ago</i></td>
-<td><a class="list name" href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/heads/systemtap-1.6-cisco-patches">systemtap-1.6-cisco-patches</a></td>
-<td class="link"><a href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/heads/systemtap-1.6-cisco-patches">shortlog</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=log;h=refs/heads/systemtap-1.6-cisco-patches">log</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=tree;h=refs/heads/systemtap-1.6-cisco-patches;hb=systemtap-1.6-cisco-patches">tree</a></td>
-</tr><tr class="light">
-<td><i>2 years ago</i></td>
-<td><a class="list name" href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/heads/mjw/create_atomic">mjw/create_atomic</a></td>
-<td class="link"><a href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/heads/mjw/create_atomic">shortlog</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=log;h=refs/heads/mjw/create_atomic">log</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=tree;h=refs/heads/mjw/create_atomic;hb=mjw/create_atomic">tree</a></td>
-</tr><tr class="dark">
-<td><i>2 years ago</i></td>
-<td><a class="list name" href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/heads/pr13539">pr13539</a></td>
-<td class="link"><a href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/heads/pr13539">shortlog</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=log;h=refs/heads/pr13539">log</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=tree;h=refs/heads/pr13539;hb=pr13539">tree</a></td>
-</tr><tr class="light">
-<td><i>2 years ago</i></td>
-<td><a class="list name" href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/heads/dsmith/task_finder2">dsmith/task_finder2</a></td>
-<td class="link"><a href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/heads/dsmith/task_finder2">shortlog</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=log;h=refs/heads/dsmith/task_finder2">log</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=tree;h=refs/heads/dsmith/task_finder2;hb=dsmith/task_finder2">tree</a></td>
-</tr><tr class="dark">
-<td><i>2 years ago</i></td>
-<td><a class="list name" href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/heads/mjw/release-1.4-transport">mjw/release-1.4-transport</a></td>
-<td class="link"><a href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/heads/mjw/release-1.4-transport">shortlog</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=log;h=refs/heads/mjw/release-1.4-transport">log</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=tree;h=refs/heads/mjw/release-1.4-transport;hb=mjw/release-1.4-transport">tree</a></td>
-</tr><tr class="light">
-<td><i>2 years ago</i></td>
-<td><a class="list name" href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/heads/mjw/backtrace">mjw/backtrace</a></td>
-<td class="link"><a href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/heads/mjw/backtrace">shortlog</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=log;h=refs/heads/mjw/backtrace">log</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=tree;h=refs/heads/mjw/backtrace;hb=mjw/backtrace">tree</a></td>
-</tr><tr class="dark">
-<td><i>3 years ago</i></td>
-<td><a class="list name" href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/heads/roland/new-sdt">roland/new-sdt</a></td>
-<td class="link"><a href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/heads/roland/new-sdt">shortlog</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=log;h=refs/heads/roland/new-sdt">log</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=tree;h=refs/heads/roland/new-sdt;hb=roland/new-sdt">tree</a></td>
-</tr><tr class="light">
-<td><i>4 years ago</i></td>
-<td><a class="list name" href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/heads/pr10653-itrace-crashes">pr10653-itrace-crashes</a></td>
-<td class="link"><a href="/git/gitweb.cgi?p=systemtap.git;a=shortlog;h=refs/heads/pr10653-itrace-crashes">shortlog</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=log;h=refs/heads/pr10653-itrace-crashes">log</a> | <a href="/git/gitweb.cgi?p=systemtap.git;a=tree;h=refs/heads/pr10653-itrace-crashes;hb=pr10653-itrace-crashes">tree</a></td>
-</tr><tr>
-<td colspan="3"><a href="/git/gitweb.cgi?p=systemtap.git;a=heads">...</a></td>
-</tr>
-</table>
-<div class="page_footer">
-<div class="page_footer_text">systemtap: system-wide probe/trace tool</div>
-<a class="rss_logo" title="log RSS feed" href="/git/gitweb.cgi?p=systemtap.git;a=rss">RSS</a>
-<a class="rss_logo" title="log Atom feed" href="/git/gitweb.cgi?p=systemtap.git;a=atom">Atom</a>
-</div>
-<script type="text/javascript" src="gitweb.js"></script>
-</body>
-</html>
+
+// Copyright (C) IBM Corp. 2007
+//
+// This file is part of systemtap, and is free software.  You can
+// redistribute it and/or modify it under the terms of the GNU General
+// Public License (GPL); either version 2, or (at your option) any
+// later version.
+
+TAPSET DEVELOPER'S GUIDE
+------------------------
+
+Tapsets are scripts that encapsulate knowledge about a kernel subsystem
+into pre-written probes and functions that can be used by other scripts. 
+Tapsets are analogous to libraries for C programs.  They hide the
+underlying details of a kernel area while exposing the key information
+needed to manage and monitor that aspect of the kernel.  They are typically
+developed by kernel subject-matter experts.
+
+This document assumes you are already familiar with SystemTap and the
+basics of writing a SystemTap script.  The REFERENCE MATERIAL section
+below lists other sources of SystemTap information.  At a minimum, you
+should study the SystemTap Tutorial, the HACKING file and some of the
+existing tapsets before attempting to write a tapset yourself.
+
+
+WHAT SHOULD A TAPSET CONTAIN?
+
+A tapset should expose the high-level data and state transitions of a
+subsystem. Assume the audience knows little to nothing about the
+subsystem's low-level details and probably doesn't care.  Users who need
+low-level data typically bypass the tapsets and write custom scripts
+targeted to a specific problem.
+
+The first step is to create a simple model of your subject area.  For
+example, a model of the process subsystem might include the following:
+
+Key data:
+
+* process ID
+* parent process ID
+* process group ID
+
+State transitions:
+
+* forked
+* execed
+* running
+* stopped
+* terminated
+
+NOTE: This is a simple example and not meant to be a complete list.
+
+Use your subsystem expertise to find probe points (function entries and
+exits) that expose the elements of the model, then define probe aliases
+for those points.  Be aware that some state transitions can occur in more
+than one place. In those cases, an alias can place a probe in multiple
+locations.
+
+For example, process execs can occur in either the do_execve() or the
+compat_do_execve() functions. The following alias inserts probes at the
+beginning of those functions:
+
+probe kprocess.exec = kernel.function("do_execve"),
+                      kernel.function("compat_do_execve") {
+   < probe body >
+}
+
+Try to place probes on stable interfaces whenever possible (i.e., functions
+that are unlikely to change at the interface level).  This makes it less
+likely that the tapset will break due to changes in the kernel.  Where
+kernel version or architecture dependencies are unavoidable, use
+preprocessor conditionals (see the stap(1) man page for details).
+
+Fill in the probe bodies with the key data available at the probe points.
+Function entry probes can access the entry parameters specified to
+the function, while exit probes can access the entry parameters and the
+return value.  Convert the data into meaningful forms where appropriate
+(e.g., bytes to kilobytes, state values to strings, etc). You may need to
+use auxiliary functions to access or convert some of the data. Auxiliary
+functions often use embedded C to do things that cannot be done in the
+SystemTap language, like access structure fields in some contexts, follow
+linked lists, etc. You can use auxiliary functions defined in other tapsets
+or write your own.
+
+In the following example, copy_process() returns a pointer to the
+task_struct for the new process.  Note that the process ID of the new
+process is retrieved by calling task_pid() and passing it the task_struct
+pointer. In this case, the auxiliary function is an embedded C function
+that's defined in the task tapset (task.stp).
+
+probe kprocess.create = kernel.function("copy_process").return {
+   task = $return
+   new_pid = task_pid(task)
+}
+
+Avoid the temptation to write probes for every function.  Most SystemTap
+users won't need or understand them.  Keep your tapset simple and high-
+level.
+
+
+ELEMENTS OF A TAPSET
+
+The following sections describe the most important aspects of writing a
+tapset and contributing it to the project.  If you're writing a tapset for
+personal use, most of these sections can be ignored, with the exception
+of "Tapset files", "Namespace" and "Embedded C & Safety."
+
+Tapset files
+------------
+Tapset files are stored in src/tapset in the SystemTap GIT directory.  
+Most are kept at that level. If you have code that only works on a specific
+architecture or kernel-version, you may choose to put that in the
+corresponding subdirectories.
+
+Installed tapsets are located in /usr/share/systemtap/tapset/
+or /usr/local/share/systemtap/tapset.
+
+Personal tapsets can be stored anywhere, but you must use 
+"-I <personal_dir> to specify their location when invoking the stap
+command.
+
+Namespace
+---------
+Probe alias names should take the form <tapset_name>.<probe_name>.  For
+example, the probe for sending a signal could be named "signal.send".
+
+Global symbol names (probes, functions and variables) should be unique
+across all tapsets.  This helps avoid namespace collisions in scripts
+that use multiple tapsets.  To ensure this, use tapset-specific prefixes
+in your global symbols.
+
+Internal symbol names should be prefixed with "_".
+
+Comments
+--------
+All probes and functions should include comment blocks that describe
+their purpose, the data they provide and the context in which they run
+(e.g., interrupt, process, etc.).  Also use comments in areas where your
+intent may not be clear from reading the code.  The comments preceding
+the functions and probes should be written in the format described in
+the Documentation section to allow automatic generation of the tapset
+documentation.
+
+Documentation
+-------------
+SystemTap now documents the tapset functions and probe points in a
+manner similar to the Linux kernel.  The tapset files have comments
+before each function and probe point that are processed by a modified
+kernel-doc script and pulled into an XML document.  HTML, PDF, and man
+pages are generated from that document during the build process.
+
+For systemtap functions the structure of the documentation comment is:
+
+/**
+ * sfunction function_name(:)? (- short description)?
+(* @parameter(space)*: (description of function parameter x)?)*
+(* a blank line)?
+ * (Description:)? (Description of function)?
+ * (section header: (section description)? )*
+(*)?*/
+
+For sytemtap probes the structure of the documentation comment is the
+following:
+
+/**
+ * probe probe_name(:)? (- short description)?
+(* @variable(space)*: (description of probe variable x)?)*
+(* a blank line)?
+ * (Description:)? (Description of probe)?
+ * (section header: (section description)? )*
+(*)?*/
+
+The document extraction keys off the "/**" at the start of the
+comment; normal comments starting with "/*" are ignored.  The next
+line of the comment describes whether the following code is for a
+SystemTap function or a probe and title descript. Following lines that
+have an '@' preceding the first word describe the parameters or
+variables available in the function or probe. There can be zero or
+more "section headers" after the variables or parameters. After each
+section there can be multiple lines of text. The comment is closed
+with "*/".
+
+The xml tapsets.tmpl in src/doc/SystemTap_Tapset_Reference makes use
+of those special comments. This xml file has place holders to extract
+the documentation from the tapsets like the following for
+ioscheduler.stp:
+
+!Itapset/ioscheduler.stp
+
+When a new tapset file is created you will need make a similar addition
+to tapsets.tmpl to pull the documentation in from the new tapset file.
+If configured to build reference documentation (--enable-refdocs) and
+the needed software is available, the build process will automatic
+generated PDF, HTML, and man pages.
+
+The creation of new man pages for the tapsets and functions is
+depricated and all the documentation should be migrated over to the
+tapsets.tmpl.
+
+Config & Makefiles
+------------------
+Add your tapset man page to the AC_CONFIG_FILES line in
+src/configure.ac, then regenerate the src/configure script by running
+autoconf.
+
+Add your tapset man page to dist_man_MANS line in src/Makefile.am, then
+regenerate src/Makefile.in by running automake.
+
+Update other Makefiles as necessary.
+
+Test cases
+----------
+All tapsets should be accompanied by test scripts.  The tests are kept
+in src/testsuite in GIT and based on dejagnu.  You must have dejagnu and
+expect installed on your system to run the tests.
+
+Your tests should validate that:
+
+- the tapset can be parsed and built
+- all probes and functions work as expected
+- all potential errors are handled appropriately
+
+See the "test suites" section of the HACKING file and the existing tests
+for details.
+
+Example Scripts
+---------------
+Provide at least one example script that uses the probe aliases and
+functions in your tapset.  This serves two purposes.  First, it shows
+script writers how you envisioned the tapset being used.  Second, and
+most important, it validates that the tapset can actually be used for
+something useful.  If you can't write a script that uses the tapset in a
+meaningful way, perhaps you should rethink what the tapset provides.
+
+Example scripts are stored in testsuite/systemtap.examples/ in GIT.
+
+Embedded C & Safety
+-------------------
+As mentioned previously, you can use embedded C (raw C code) to do
+things not supported by the SystemTap language.  Please do this
+carefully and sparingly, as embedded C bypasses all the safety
+features built into SystemTap.  There are a few style conventions that
+make writing robust embedded C code easier:
+
+- Be especially careful when dereferencing pointers.  Use the kread()
+  macro to dereference any pointers that could potentially be invalid.
+  If you're not sure, err on the side of caution.  The cost of using
+  kread() is small compared to the cost of your tapset inadvertently
+  crashing a system!
+
+- Use the macros STAP_RETVALUE and STAP_ARG_* to access the function's
+  arguments and return slot.  This ensures that the function will not
+  break if the internal naming scheme for local variables changes
+  between SystemTap versions.
+
+- It is absolutely necessary to rigorously test embedded-C functions
+  in the testsuite, particularly to ensure that they fail gracefully
+  in unexpected situations instead of causing a kernel panic.
+
+Add the string 
+    /* pure */
+into the body of the embedded-C function if it has no side-effects
+such as changing external state, so that systemtap could elide
+(optimize away) a call to the function if its results are unused.
+
+Add the string
+    /* unprivileged */
+into the body of the embedded-C function, only if it is safe for use
+by unprivileged users.  In general, this requires the function to be
+absolutely robust with respect to its inputs, and expose/modify no
+information except that belonging to the user's own processes.
+(The assert_is_myproc() macro may help enforce this.)  Roughly
+speaking, it should only perform operations that the same user
+could already do from ordinary userspace interfaces.
+
+Add the string
+    /* myproc-unprivileged */
+into the body of the embedded-C function, to mark it as /* unprivileged */
+(see above) and to have the systemtap translator automatically add a call to
+assert_is_myproc() to the beginning of the function.
+
+Add the string
+    /* unmangled */
+into a legacy (pre-SystemTap 1.8) embedded-C function that needs to
+use the old argument / return slot access syntax (namely, THIS->foo
+and THIS->__retvalue). This is useful for migrating tapsets to work
+with the new syntax.
+
+
+Review & Submission
+-------------------
+All new tapsets and major changes should be reviewed "early and often"
+by the SystemTap community.  You can sign up for the systemtap mailing
+list at http://sourceware.org/systemtap/getinvolved.html.  The
+mailing list archive is found at http://sourceware.org/ml/systemtap/.
+The systemtap-cvs mailing list archive is at
+http://sourceware.org/ml/systemtap-cvs/.
+
+You can request GIT write access at
+http://sourceware.org/cgi-bin/pdw/ps_form.cgi.
+
+
+REFERENCE MATERIAL
+
+The following documents, web sites and mailing lists will familiarize
+you with SystemTap:
+
+- SystemTap Tutorial.  A good introduction to SystemTap.
+  (html format: http://sourceware.org/systemtap/tutorial/,
+  PDF format: http://sourceware.org/systemtap/tutorial.pdf)
+
+- SystemTap project home page
+  (http://sourceware.org/systemtap/index.html)
+
+- SystemTap mailing lists, IRC channels and GIT instructions
+  (http://sourceware.org/systemtap/getinvolved.html)
+
+- GIT repository
+  (http://sourceware.org/git/?p=systemtap.git;a=summary)
+
+- HACKING file in the source directory.  This file outlines what's 
+  expected of project contributors.
+
+- SystemTap Wiki.  Contains papers and presentations, setup instructions
+  for various distributions, and a growing set of example scripts.
+  (http://sourceware.org/systemtap/wiki)
+
+- Existing tapsets
+
+- SystemTap Language Reference.
+  (html format: http://sourceware.org/systemtap/langref/,
+  PDF format: http://sourceware.org/systemtap/langref.pdf)
+
+- SystemTap Man Pages (use "man -k stap" to print a list)
