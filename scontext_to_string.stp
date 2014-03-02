@@ -1,0 +1,19 @@
+%{
+#include <linux/security.h>
+%}
+
+function sid_to_context_str:string (sid:long)%{
+	/*return the pointer to */
+	char * ret;
+	int len;
+	/*bug to fix: memory leak */
+	security_secid_to_secctx((int) THIS->sid, &ret, &len);
+	snprintf(THIS->__retvalue, MAXSTRINGLEN, "%s", ret);
+	kfree(ret);
+%}
+
+probe begin{
+	printf("%s \n", sid_to_context_str(43))
+	exit()
+}
+
