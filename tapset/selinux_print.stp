@@ -1,6 +1,5 @@
 %{
 #include <linux/security.h>
-#include <linux/sched.h>
 %}
 
 function sid_to_context_str:string (sid:long)%{
@@ -13,13 +12,6 @@ function sid_to_context_str:string (sid:long)%{
 	kfree(ret);
 %}
 
-function pid_to_sid:long (pid: long)%{
-	/*task pointer to current val*/
-	struct task_struct * tp;
-	pid_t pid = (pid_t) THIS->pid;
-	int sid;
-	tp = find_task_by_vpid(pid);
-	sid = security_task_getsid(tp);
-	THIS->__retvalue = (long) sid;
+function pid2sid:long (pid:long) %{
+	 THIS->__retvalue = (long) security_task_getsid((struct task_struct *)pid2task(THIS->pid));
 %}
-
