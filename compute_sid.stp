@@ -1,0 +1,7 @@
+probe kernel.function("security_compute_sid@/build/buildd/linux-lts-raring-3.8.0/security/selinux/ss/services.c:1386").return{
+
+	printf("ssid:%s \n", sid_to_context_str($ssid))
+	printf("tsid:%s \n", sid_to_context_str($tsid))
+	printf("osid:%s \n", sid_to_context_str(kernel_int($osid)))
+
+}

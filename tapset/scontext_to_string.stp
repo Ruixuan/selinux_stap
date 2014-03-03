@@ -12,8 +12,4 @@ function sid_to_context_str:string (sid:long)%{
 	kfree(ret);
 %}
 
-probe begin{
-	printf("%s \n", sid_to_context_str(43))
-	exit()
-}
 
