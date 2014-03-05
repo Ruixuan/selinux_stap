@@ -1,0 +1,6 @@
+probe syscall.execve{
+	printf("%s begin exec \n      current context: %s \n", execname(), pid2sstr(pid()))
+}
+probe syscall.execve.return{
+	printf("%s return from exec \n current context: %s \n", execname(), pid2sstr(pid()))
+}

@@ -16,9 +16,12 @@ function task2sid:long (t:long) %{ /*pure*/
 	u32 ret;
 	security_task_getsecid((struct task_struct *)(long) THIS->t, &ret);
 	THIS->__retvalue = (long) ret;
-	/*THIS->__retvalue = (long) security_task_getsid((struct task_struct *)(long) THIS->t);*/
 %}
 
 function pid2sid:long (pid:long) {
 	return task2sid(pid2task(pid))
+}
+
+function pid2sstr:string (pid:long) {
+	return sid_to_context_str(pid2sid(pid));
 }
