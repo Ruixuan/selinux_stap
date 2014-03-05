@@ -7,11 +7,18 @@ function sid_to_context_str:string (sid:long)%{
 	char * ret;
 	int len;
 	/*bug to fix: memory leak */
-	security_secid_to_secctx((int) THIS->sid, &ret, &len);
+	security_secid_to_secctx( THIS->sid, &ret, &len);
 	snprintf(THIS->__retvalue, MAXSTRINGLEN, "%s", ret);
 	kfree(ret);
 %}
 
-function pid2sid:long (pid:long) %{
-	 THIS->__retvalue = (long) security_task_getsid((struct task_struct *)pid2task(THIS->pid));
+function task2sid:long (t:long) %{ /*pure*/
+	u32 ret;
+	security_task_getsecid((struct task_struct *)(long) THIS->t, &ret);
+	THIS->__retvalue = (long) ret;
+	/*THIS->__retvalue = (long) security_task_getsid((struct task_struct *)(long) THIS->t);*/
 %}
+
+function pid2sid:long (pid:long) {
+	return task2sid(pid2task(pid))
+}
