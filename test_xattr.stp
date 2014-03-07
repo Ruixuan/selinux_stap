@@ -1,0 +1,6 @@
+probe begin{
+	printf("begin !!\n");
+	getxattr("test", "security.selinux")
+	printf("end !!!\n")
+	exit()
+}

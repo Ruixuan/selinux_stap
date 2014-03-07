@@ -1,5 +1,7 @@
 %{
 #include <linux/security.h>
+#include <linux/namei.h>
+#include <linux/xattr.h>
 %}
 
 function sid_to_context_str:string (sid:long)%{
@@ -25,3 +27,21 @@ function pid2sid:long (pid:long) {
 function pid2sstr:string (pid:long) {
 	return sid_to_context_str(pid2sid(pid));
 }
+
+function getxattr:string (path:string, name:string) %{
+	struct path path;
+	int ret;
+	char * kvalue;
+	unsigned int lookup_flags = 0;
+	printk(KERN_INFO "BEGIN FUNC \n");
+	ret = kern_path(THIS->path, lookup_flags, &path);	
+	if (!ret){
+		kvalue = vmalloc(MAXSTRINGLEN);
+		vfs_getxattr(path.dentry, THIS->name, kvalue, MAXSTRINGLEN);
+		snprintf(THIS->__retvalue, MAXSTRINGLEN, "%s", kvalue);
+		kfree(kvalue);
+	}else{
+		snprintf(THIS->__retvalue, MAXSTRINGLEN, "ERROR IN READ XATTR");
+	}
+	
+%}

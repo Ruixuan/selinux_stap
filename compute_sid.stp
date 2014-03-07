@@ -1,3 +1,11 @@
+probe syscall.* {
+	printf("-> %s \n", probefunc() )
+}
+
+probe syscall.*.return {
+	printf("<- %s \n", probefunc() )
+}
+
 probe kernel.function("security_compute_sid").return{
 	printf("PID: %d tapset caller: %s \n", pid(), caller())
 	printf("ssid:%s \n", sid_to_context_str($ssid))
