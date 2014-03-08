@@ -1,4 +1,4 @@
 probe begin{
-	printf("sid: %d\n", file2sid("test") )
+	printf("%s\n", filectx("test") )
 	exit()
 }

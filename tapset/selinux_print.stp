@@ -28,37 +28,18 @@ function pid2sstr:string (pid:long) {
 	return sid_to_context_str(pid2sid(pid));
 }
 
-function file2sid:long (path:string) %{
+function filectx:string (path:string) %{
 	struct path path;
 	int ret;
-	u32 sid;
+	u32 sid, ctxlen;
 	struct inode *inode;
+	char * ctx;
 	unsigned int lookup_flags = 0;
 	ret = kern_path(THIS->path, lookup_flags, &path);	
 	if (!ret){
-		inode = path.dentry.d_inode;
-		security_inode_getsecid(inode, &sid);
-		THIS->__retvalue = (long) sid;
+		inode = path.dentry->d_inode;
+		security_inode_getsecctx(inode,(void **) &ctx, &ctxlen);
+		snprintf(THIS->__retvalue, ctxlen, "%s", ctx);
+		kfree(ctx);
 	}
-%}
-
-function getxattr:string (path:string, name:string) %{
-	struct path path;
-	int ret;
-	char * kvalue;
-	
-	unsigned int lookup_flags = 0;
-	printk(KERN_INFO "BEGIN FUNC \n");
-	ret = kern_path(THIS->path, lookup_flags, &path);	
-	snprintf(THIS->__retvalue, MAXSTRINGLEN, "ERROR IN READ XATTR");
-
-/*	if (!ret){
-		kvalue = vmalloc(MAXSTRINGLEN);
-		vfs_getxattr(path.dentry, THIS->name, kvalue, MAXSTRINGLEN);
-		snprintf(THIS->__retvalue, MAXSTRINGLEN, "%s", kvalue);
-		kfree(kvalue);
-	}else{
-		snprintf(THIS->__retvalue, MAXSTRINGLEN, "ERROR IN READ XATTR");
-	}
-a*/	
 %}
