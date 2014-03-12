@@ -1,0 +1,6 @@
+probe kernel.function("avc_has_perm_noaudit@/build/buildd/linux-lts-raring-3.8.0/security/selinux/avc.c:720").return{
+	# print the decision result
+	allowed = $avd->allowed
+	audit_allow = $avd->auditallow
+	printf("ssid:%d tsid:%d decision:%x \n", $ssid, $tsid, $return)
+}
