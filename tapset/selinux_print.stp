@@ -14,15 +14,15 @@ function sid_to_context_str:string (sid:long)%{
 	char * ret;
 	int len;
 	/*bug to fix: memory leak */
-	security_secid_to_secctx( THIS->sid, &ret, &len);
-	snprintf(THIS->__retvalue, MAXSTRINGLEN, "%s", ret);
+	security_secid_to_secctx( STAP_ARG_sid, &ret, &len);
+	snprintf(STAP_RETVALUE, MAXSTRINGLEN, "%s", ret);
 	kfree(ret);
 %}
 
 function task2sid:long (t:long) %{ /*pure*/
 	u32 ret;
-	security_task_getsecid((struct task_struct *)(long) THIS->t, &ret);
-	THIS->__retvalue = (long) ret;
+	security_task_getsecid((struct task_struct *)(long) STAP_ARG_t, &ret);
+	STAP_RETVALUE = (long) ret;
 %}
 
 function pid2sid:long (pid:long) {
@@ -40,11 +40,11 @@ function filectx:string (path:string) %{
 	struct inode *inode;
 	char * ctx;
 	unsigned int lookup_flags = 0;
-	ret = kern_path(THIS->path, lookup_flags, &path);	
+	ret = kern_path(STAP_ARG_path, lookup_flags, &path);	
 	if (!ret){
 		inode = path.dentry->d_inode;
 		security_inode_getsecctx(inode,(void **) &ctx, &ctxlen);
-		snprintf(THIS->__retvalue, ctxlen, "%s", ctx);
+		snprintf(STAP_RETVALUE, ctxlen, "%s", ctx);
 		kfree(ctx);
 	}
 %}
