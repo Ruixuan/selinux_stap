@@ -2,6 +2,11 @@
 #include <linux/security.h>
 #include <linux/namei.h>
 #include <linux/xattr.h>
+#define SECCLASS_PROCESS   2
+%}
+
+function sct_compute:long (ssid:long, tsid:long, tclass:long) %{
+/*NOT IMPLEMENTED, NEED TO FIND INCLUDE FILE TO USE THE FUNCTION*/
 %}
 
 function sid_to_context_str:string (sid:long)%{

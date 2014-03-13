@@ -11,5 +11,6 @@ probe kernel.function("security_compute_sid").return{
 	printf("ssid:%s \n", sid_to_context_str($ssid))
 	printf("tsid:%s \n", sid_to_context_str($tsid))
 	printf("osid:%s \n", sid_to_context_str(kernel_int($out_sid)))
+	print_backtrace()
 
 }
