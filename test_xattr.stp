@@ -1,4 +1,4 @@
 probe begin{
-	printf("%s\n", filectx("test") )
+	printf("%s\n", filectx("test_f") )
 	exit()
 }
