@@ -1,7 +1,6 @@
 probe begin {
-	printf("curr sid %d \n", pid2sid(pid()))
+	printf("curr sctx %s  \n", sid_to_context_str( pid2sid(pid())))
 #change_task_sid(task_current(),49)
 	chang_curr_sid(2165)
 	printf("curr sid %d \n", pid2sid(pid()))
-	exit()
 }

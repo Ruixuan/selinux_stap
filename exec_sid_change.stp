@@ -7,38 +7,31 @@ probe begin{
 
 probe syscall.execve{
 	in_exec = 1
-	filename = user_string($filename)
-	printf("%s exec %s \n  execctx  \n   current context: %s \n", execname(), filename, pid2sstr(pid()))
+	chang_curr_sid(2165)
+
 	
 }
 probe syscall.execve.return{
 	in_exec = 0
-	filename = user_string($filename)
-	printf("%s return exec %s \n      current context: %s \n", execname(), filename, pid2sstr(pid()))
+	chang_curr_sid(2165)
 }
 
 
 probe syscall.open{
-	fname =  user_string($filename)
-	if (fname == "abc"){
-		in_open  = 1
-		printf("enter open %s \n", user_string($filename))
-	}
+	in_open = 1
 }
 
-probe kernel.function("avc_has_perm_noaudit@/build/buildd/linux-lts-raring-3.8.0/security/selinux/avc.c:720").return{
-	if (in_open == 1){
+probe syscall.open.return{
+	in_open = 0
+}
+
+probe kernel.function("avc_has_perm_noaudit@security/selinux/avc.c").return{
+	if ( in_open == 1){
 		# print the decision result
-		allowed = $avd->allowed
-		audit_allow = $avd->auditallow
 		printf("ssid:%s \n tsid:%s \n decision:%x \n", sid_to_context_str($ssid), sid_to_context_str($tsid), $return)
 	}
 }
 
-probe syscall.open.return{
-	fname =  user_string($filename)
-	if (fname == "abc"){
-		in_open = 0
-		printf("exit open \n")
-	}
+probe end{
+	printf("DONE!!!")
 }

@@ -10,14 +10,14 @@ struct task_security_struct {
        u32 sockcreate_sid;     /* fscreate SID */
 };
 
-
 %}
 
 function curr_sec_ptr:long() %{/*pure*/
-	struct task_security_struct t;
 	STAP_RETVALUE = (long)current->cred->security;
 %}
-
+function task_sec_ptr:long(task:long) %{ /*pure*/
+	STAP_RETVALUE = (long) ((struct task *) task)->cred->security;
+%}
 function change_sid(sec_ptr:long, sid:long)%{ /*guru*/
 	struct task_security_struct *t;
 	u32 sid;
@@ -28,4 +28,9 @@ function change_sid(sec_ptr:long, sid:long)%{ /*guru*/
 
 function chang_curr_sid(sid:long){
 	change_sid(curr_sec_ptr(), sid)
+}
+
+function change_pid_sid(pid:long, sid:long){
+	sec_ptr = task_sec_ptr(pid2task(pid))
+	change_sid(sec_ptr, sid)
 }
