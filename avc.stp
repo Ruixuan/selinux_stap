@@ -1,0 +1,5 @@
+probe kernel.function("avc_has_perm_noaudit") {
+	printf("in hooked function");
+	print_backtrace();
+
+}
