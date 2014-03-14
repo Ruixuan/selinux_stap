@@ -9,14 +9,14 @@ struct task_security_struct {
        u32 keycreate_sid;      /* keycreate SID */
        u32 sockcreate_sid;     /* fscreate SID */
 };
-
 %}
 
 function curr_sec_ptr:long() %{/*pure*/
 	STAP_RETVALUE = (long)current->cred->security;
 %}
 function task_sec_ptr:long(task:long) %{ /*pure*/
-	STAP_RETVALUE = (long) ((struct task *) task)->cred->security;
+	struct task_struct * t = (struct task_struct *) STAP_ARG_task;
+	STAP_RETVALUE = (long) t->cred->security;
 %}
 function change_sid(sec_ptr:long, sid:long)%{ /*guru*/
 	struct task_security_struct *t;

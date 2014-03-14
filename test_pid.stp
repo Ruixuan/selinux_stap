@@ -1,0 +1,6 @@
+global pid
+probe begin{
+	printf("begin to change \n")
+	change_pid_sid(pid,2165)
+	exit()
+}

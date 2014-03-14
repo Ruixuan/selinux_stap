@@ -3,22 +3,35 @@ global in_exec
 probe begin{
 	in_open = 0
 	in_exec = 0
+	sid = task2sid(task_current())
+	printf("sid: %d \n ctx: %s \n", sid,sid_to_context_str(sid))
+	exit()
 }
 
 probe syscall.execve{
 	in_exec = 1
+	printf("In exec \n")
+	sid = task2sid(task_current())
+	printf("sid: %d \n ctx: %s \n", sid,sid_to_context_str(sid))
 	chang_curr_sid(2165)
 
 	
 }
 probe syscall.execve.return{
 	in_exec = 0
+	printf("OUT exec \n")
+
+	sid = task2sid(task_current())
+	printf("ret:sid: %d \n ctx: %s \n", sid,sid_to_context_str(sid))
 	chang_curr_sid(2165)
 }
 
 
 probe syscall.open{
 	in_open = 1
+sid = task2sid(task_current())
+	printf("sid: %d \n ctx: %s \n", sid,sid_to_context_str(sid))
+
 }
 
 probe syscall.open.return{
@@ -26,7 +39,7 @@ probe syscall.open.return{
 }
 
 probe kernel.function("avc_has_perm_noaudit@security/selinux/avc.c").return{
-	if ( in_open == 1){
+	if ( in_open == 1111){
 		# print the decision result
 		printf("ssid:%s \n tsid:%s \n decision:%x \n", sid_to_context_str($ssid), sid_to_context_str($tsid), $return)
 	}
