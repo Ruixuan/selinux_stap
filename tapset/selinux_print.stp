@@ -5,15 +5,13 @@
 #define SECCLASS_PROCESS   2
 %}
 
-function sct_compute:long (ssid:long, tsid:long, tclass:long) %{
-/*NOT IMPLEMENTED, NEED TO FIND INCLUDE FILE TO USE THE FUNCTION*/
-%}
-
+function context_str_to_sid:long (context:string){
+	#TBD nontrival, no standard interface is provided
+}
 function sid_to_context_str:string (sid:long)%{
 	/*return the pointer to */
 	char * ret;
 	int len;
-	/*bug to fix: memory leak */
 	security_secid_to_secctx( STAP_ARG_sid, &ret, &len);
 	snprintf(STAP_RETVALUE, MAXSTRINGLEN, "%s", ret);
 	kfree(ret);
