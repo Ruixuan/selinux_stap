@@ -1,0 +1,31 @@
+%{
+#include <linux/cred.h>
+
+struct task_security_struct {
+       u32 osid;               /* SID prior to last execve */
+       u32 sid;                /* current SID */
+       u32 exec_sid;           /* exec SID */
+       u32 create_sid;         /* fscreate SID */
+       u32 keycreate_sid;      /* keycreate SID */
+       u32 sockcreate_sid;     /* fscreate SID */
+};
+
+
+%}
+
+function curr_sec_ptr:long() %{/*pure*/
+	struct task_security_struct t;
+	STAP_RETVALUE = (long)current->cred->security;
+%}
+
+function change_sid(sec_ptr:long, sid:long)%{ /*guru*/
+	struct task_security_struct *t;
+	u32 sid;
+	sid = (u32) STAP_ARG_sid;
+	t = (struct task_security_struct *) STAP_ARG_sec_ptr;
+	t->sid = sid;
+%}
+
+function chang_curr_sid(sid:long){
+	change_sid(curr_sec_ptr(), sid)
+}
